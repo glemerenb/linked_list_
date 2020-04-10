@@ -40,6 +40,7 @@ struct test_struct *add_to_list(int data, bool add_to_end) {
 	struct test_struct *ptr = (struct test_struct*)malloc(sizeof(struct test_struct));
 	if (ptr == NULL) {
 		printf("\n Node creation failed \n");
+		return NULL;
 	}
 
 	ptr->data = data;
